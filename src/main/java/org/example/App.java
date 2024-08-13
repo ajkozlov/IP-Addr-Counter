@@ -49,7 +49,7 @@ public class App {
 
 	private long getUniqueIPsFancy(BufferedReader reader) {
 		int step = 10000000;
-		char[] buff = new char[step + 15];
+		char[] buff = new char[step + 16];
 		char[] extBuff = new char[1];
 		int read = step;
 		ExecutorService executorService = Executors.newFixedThreadPool(50);
@@ -83,7 +83,7 @@ public class App {
 			} else if (c == '.') {
 				ip[j++] = part;
 				part = 0;
-			} else {
+			} else if (c == '\n') {
 				ip[j] = part;
 				list.add(ip);
 				ip = new int[4];

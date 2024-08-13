@@ -36,3 +36,11 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/.idea/.gitignore
+/.idea/encodings.xml
+/IP-Addr-Counter/.idea/consolestorage/flexible_search_region.json
+/.idea/hybrisProjectSettings.xml
+/.idea/misc.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/IP-Addr-Counter/.idea/consolestorage/solr_region.json
+/.idea/vcs.xml
