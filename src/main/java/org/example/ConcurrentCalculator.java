@@ -69,7 +69,6 @@ public class ConcurrentCalculator extends AbstractCalculator{
 
 	private void calcBatch(List<int[]> ips) {
 		ips.forEach(this::calculate);
-		System.out.println("batch(" + ips.size() + ")" + batchCounter++);
 	}
 
 	private void calculate(int[] ip) {

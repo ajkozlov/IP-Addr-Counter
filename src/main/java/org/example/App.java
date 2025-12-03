@@ -27,6 +27,7 @@ public class App {
 			AbstractCalculator calculator = switch (type) {
 				case "m" -> new MemoryEffectiveCalculator();
 				case "c" -> new ConcurrentCalculator();
+				case "f" -> new FastestCalculator();
 				default -> new NaiveCalculator();
 			};
 			calculator.start(path);
